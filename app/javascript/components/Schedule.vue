@@ -83,10 +83,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-for="hour in day.hours" v-bind:key="hour.id" v-bind:style= "[hour.bol_available ? {'background-color': 'pink'} : {}]">
+                        <tr v-for="hour in day.hours" v-bind:key="hour.id" v-bind:style= "[hour.bol_available ? {'background-color': 'mistyrose'} : {}]">
                             <td>{{ hour.range_hour }}</td>
-                            <td v-for="user in hour.users" v-bind:key="user.id">
+                            <td v-if="edit_availability" v-for="user in hour.users" v-bind:key="user.id">
                                 <p v-if="user.available">1</p>
+                                <img v-if="user.available==false" src="https://www.freeiconspng.com/thumbs/alert-icon/emergency-alert-icon-alert-icon-8.png" alt="Alert"/>
+                            </td>
+
+                            <td v-if="save_availability" v-for="user in hour.users" v-bind:key="user.id">
+                                <input type="radio" name="user_available" v-model="day.available" v-bind:value="user.available" >
                             </td>
                         </tr>
                         </tbody>
@@ -131,7 +136,12 @@
                 range_days: "",
 
                 edit_availability: false,
-                save_availability: false
+                save_availability: false,
+
+                day: {
+                    available: []
+                }
+
             }
         },
         // Leemos los datos JSON con axios
@@ -206,6 +216,13 @@
                 console.log('editAvailability');
                 this.edit_availability = false;
                 this.save_availability = true;
+            },
+            saveAvailability(){
+                this.getWeeks();
+                this.getDays();
+                this.getUsers();
+                this.edit_availability = true;
+                this.save_availability = false;
             },
             testFunction: function (event) {
                 console.log('test clicked')
