@@ -90,8 +90,8 @@
                                 <img v-if="user.available==false" src="https://www.freeiconspng.com/thumbs/alert-icon/emergency-alert-icon-alert-icon-8.png" alt="Alert"/>
                             </td>
 
-                            <td v-if="save_availability" v-for="user in hour.users" v-bind:key="user.id">
-                                <input type="radio" name="user_available" v-model="day.available" v-bind:value="user.available" >
+                            <td v-if="save_availability" v-for="(user, index) in hour.users" :key="index">
+                                <input type="checkbox" v-bind:name="'hour_name_'+hour.id" v-model="day.available" v-bind:value="user.available" >
                             </td>
                         </tr>
                         </tbody>

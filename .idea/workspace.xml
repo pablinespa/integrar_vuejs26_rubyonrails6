@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f6537c-b08c-4a5f-8ba0-b7680cbd8a28" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/components/Schedule.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Schedule.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="Schedule.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/components/Schedule.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="93" column="74" selection-start-line="93" selection-start-column="74" selection-end-line="93" selection-end-column="74" />
+            <state relative-caret-position="442">
+              <caret line="93" column="85" selection-start-line="93" selection-start-column="85" selection-end-line="93" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -492,12 +492,12 @@
       <workItem from="1643212720953" duration="6356000" />
       <workItem from="1643549417914" duration="34677000" />
       <workItem from="1643641196490" duration="17676000" />
-      <workItem from="1643805141185" duration="7471000" />
+      <workItem from="1643805141185" duration="10118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66180000" />
+    <option name="totallyTimeSpent" value="68827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="958" y="6" width="963" height="1000" extended-state="0" />
@@ -853,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/components/Schedule.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="93" column="74" selection-start-line="93" selection-start-column="74" selection-end-line="93" selection-end-column="74" />
+        <state relative-caret-position="442">
+          <caret line="93" column="85" selection-start-line="93" selection-start-column="85" selection-end-line="93" selection-end-column="85" />
         </state>
       </provider>
     </entry>
