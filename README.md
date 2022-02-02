@@ -5,15 +5,29 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.6.5
+
+* vue version 2.6.14
 
 * System dependencies
 
+  - ENV['DATABASE_USERNAME'] = 'postgres'
+  - ENV['DATABASE_PASSWORD'] = postgres
+
 * Configuration
 
+  - bundle install
+  - yarn install
+  - 
 * Database creation
 
+  - rake db:create
+
 * Database initialization
+
+  - rake db:migrate
+  - rake db:seed
+  - rake RAILS_ENV=development create_datas:service
 
 * How to run the test suite
 
