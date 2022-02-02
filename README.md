@@ -28,6 +28,7 @@ Things you may want to cover:
   - rake db:migrate
   - rake db:seed
   - rake RAILS_ENV=development create_datas:service
+    - task that adds the data to the system 
 
 * How to run the test suite
 
